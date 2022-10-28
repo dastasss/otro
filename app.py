@@ -15,6 +15,8 @@ mysql = MySQL(app)
 app.secret_key = "mysecretkey"
 
 # routes
+
+
 @app.route('/')
 def Index():
     cur = mysql.connection.cursor()
